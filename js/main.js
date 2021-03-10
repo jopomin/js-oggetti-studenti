@@ -54,7 +54,25 @@ studentList.push({"firstName":firstName, "lastName":lastName, "age":age});
 console.log(studentList[studentList.length-1]);
 
 for (var i = 0; i < studentList.length; i++) {
-    for (var key in studentList[i]) {
-        console.log(studentList[i].firstName, studentList[i].lastName);
+    console.log(studentList[i].firstName, studentList[i].lastName);
+}
+
+var classAge = [];
+
+for (var i = 0; i < studentList.length; i++) {
+    classAge[i] = studentList[i].age;
+}
+
+var averAge = media(classAge).toFixed(1);
+console.log("l'età media della classe è di "+averAge+" anni");
+
+/* var averAge =  */
+
+function media(list) {
+    var somma = 0;
+    for (var i = 0; i < list.length; i++) {
+        somma += list[i];
     }
+    var media = somma / list.length;
+    return media;
 }

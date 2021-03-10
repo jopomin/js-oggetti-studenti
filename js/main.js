@@ -76,3 +76,8 @@ function media(list) {
     var media = somma / list.length;
     return media;
 }
+
+for (var i = 0; i < studentList.length; i++) {
+    document.getElementById("classe").innerHTML +=
+        "<tr><td>"+studentList[i].lastName+"</td><td>"+studentList[i].firstName+"</td><td>"+studentList[i].age+"</td></tr>"
+}

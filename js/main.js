@@ -46,3 +46,15 @@ for (var i = 0; i < studentList.length; i++) {
         console.log(studentList[i].firstName, studentList[i].lastName);
     }
 }
+
+var firstName = prompt("Inserisci il nome dello studente");
+var lastName = prompt("Inserisci il cognome dello studente");
+var age = parseInt(prompt("Inserisci l'età dello studente"));
+studentList.push({"firstName":firstName, "lastName":lastName, "age":age});
+console.log(studentList[studentList.length-1]);
+
+for (var i = 0; i < studentList.length; i++) {
+    for (var key in studentList[i]) {
+        console.log(studentList[i].firstName, studentList[i].lastName);
+    }
+}

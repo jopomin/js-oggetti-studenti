@@ -29,7 +29,7 @@ var studentList = [
         "lastName": "Federer",
         "age": 39
     },
-    {
+/*     {
         "firstName": "Gilberto",
         "lastName": "Godoy Filho",
         "age": 45
@@ -38,7 +38,7 @@ var studentList = [
         "firstName": "Ronaldo Luis",
         "lastName": "Nazario de Lima",
         "age": 45
-    },
+    }, */
 ];
 
 for (var i = 0; i < studentList.length; i++) {
@@ -65,6 +65,7 @@ for (var i = 0; i < studentList.length; i++) {
 
 var averAge = media(classAge).toFixed(1);
 console.log("l'età media della classe è di "+averAge+" anni");
+document.getElementById("etamedia").innerHTML = averAge;
 
 /* var averAge =  */
 
